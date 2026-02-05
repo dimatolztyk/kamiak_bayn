@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Мій хом’як 🐹</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fffbe6;
+            color: #333;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #ff6600;
+        }
+
+        img {
+            max-width: 300px;
+            border-radius: 15px;
+            opacity: 0; /* спочатку невидиме */
+            transition: opacity 2s ease-in-out; /* плавне появлення */
+        }
+
+        img.show {
+            opacity: 1; /* з’являється */
+        }
+    </style>
+</head>
+<body>
+    <h1>Привіт! 🐹</h1>
+    <p>Ось мій хом’як:</p>
+    <img id="hamster" src="hamster.jpg" alt="Мій хом’як">
+
+    <script>
+        // Затримка 1 секунда перед появою фото
+        setTimeout(() => {
+            document.getElementById('hamster').classList.add('show');
+        }, 1000);
+    </script>
+</body>
+</html>
